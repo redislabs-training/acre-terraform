@@ -32,7 +32,7 @@ Azure Cache for Redis Enterprise (ACRE)
 ## Getting started
 
 ```bash
-  git clone https://github.com/redisgeek/acre-terraform
+  git clone https://github.com/redislabs-training/acre-terraform
   cd acre-terraform
   terraform init
 ```

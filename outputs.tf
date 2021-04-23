@@ -1,11 +1,11 @@
 locals {
-  redisgeek_config = {
-    cluster = azurerm_redis_enterprise_cluster.redisgeek.*
-    database = azurerm_redis_enterprise_database.redisgeek.*
+  redislabs_config = {
+    cluster = azurerm_redis_enterprise_cluster.redislabs.*
+    database = azurerm_redis_enterprise_database.redislabs.*
   }
 }
 
-output "redisgeek_config" {
-  value = jsonencode(local.redisgeek_config)
+output "redislabs_config" {
+  value = jsonencode(local.redislabs_config)
   sensitive = true
 }
